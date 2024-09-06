@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/size_25"
+        android:paddingVertical="@dimen/size_15"
+        android:layout_marginBottom="@dimen/size_20"
+        android:background="@drawable/round_white_bg">
+
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorMainBgBlue"
+                android:textSize="@dimen/font_15"
+                android:textAlignment="viewStart"
+                app:customFont="@string/Nuinito_Regular"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="AI Arid Medical"/>
+
+
+        <com.blazma.logistics.custom.CustomTextView
+            android:id="@+id/tvCar"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/font_12"
+            android:textAlignment="viewEnd"
+            app:customFont="@string/Nuinito_Regular"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Car 4323"/>
+
+
+
+
+        <com.blazma.logistics.custom.CustomTextView
+            android:id="@+id/tvFromLocation"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.7"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGrayDark"
+            android:textSize="@dimen/font_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="@dimen/size_5"
+            app:customFont="@string/Nuinito_Regular"
+            tools:text="ABZ 2300"/>
+
+        <ImageView
+            android:id="@+id/iv_from_map"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_20"
+            android:padding="@dimen/size_5"
+            android:src="@drawable/route"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/tvFromLocation"
+            app:layout_constraintTop_toTopOf="@+id/tvFromLocation"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFromLocation"
+            />
+
+        <ImageView
+            android:id="@+id/iv_to_map"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_20"
+            android:src="@drawable/route"
+            android:padding="@dimen/size_5"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/tvToLocation"
+            app:layout_constraintTop_toTopOf="@+id/tvToLocation"
+            app:layout_constraintBottom_toBottomOf="@+id/tvToLocation"
+            />
+
+        <com.blazma.logistics.custom.CustomTextView
+            android:id="@+id/tvToLocation"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.7"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGrayDark"
+            android:textSize="@dimen/font_12"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="@dimen/size_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:customFont="@string/Nuinito_Regular"
+            app:layout_constraintTop_toBottomOf="@+id/iv_from_map"
+            tools:text="ABZ 2300"/>
+
+
+        <com.blazma.logistics.custom.CustomTextView
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="18-08-2021"
+            app:layout_constraintTop_toBottomOf="@+id/iv_to_map"
+            android:textColor="@color/colorTextGrayDark"
+            android:textSize="@dimen/font_12"
+            android:textAlignment="viewStart"
+            android:singleLine="false"
+            android:layout_marginTop="@dimen/size_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:customFont="@string/Nuinito_Regular" />
+
+        <com.blazma.logistics.custom.CustomTextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="18-08-2021"
+            android:textColor="@color/colorTextGrayDark"
+            android:textSize="@dimen/font_12"
+            android:textAlignment="viewStart"
+            android:singleLine="false"
+            app:layout_constraintTop_toBottomOf="@+id/tvNote"
+            app:layout_constraintStart_toStartOf="parent"
+            app:customFont="@string/Nuinito_Regular" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

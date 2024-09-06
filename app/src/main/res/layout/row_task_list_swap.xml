@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/size_25"
+        android:paddingVertical="@dimen/size_15"
+        android:layout_marginBottom="@dimen/size_10"
+        android:background="@drawable/round_white_bg">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_20"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivTrack">
+                <com.blazma.logistics.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14"
+                    android:textAlignment="viewStart"
+                    app:customFont="@string/Nuinito_Bold" />
+
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/tvFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:singleLine="false"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextGrayLight"
+                    android:textSize="@dimen/font_12"
+                    app:customFont="@string/Nuinito_Regular"
+                    tools:text="" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivTrack"
+                android:layout_width="@dimen/size_30"
+                android:layout_height="@dimen/size_30"
+                android:src="@drawable/disabled_track"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_30"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivTrack"
+                app:layout_constraintEnd_toEndOf="parent">
+                <com.blazma.logistics.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14"
+                    android:textAlignment="viewStart"
+                    app:customFont="@string/Nuinito_Bold" />
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/tvTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text=""
+                    android:textColor="@color/colorTextGrayLight"
+                    android:textSize="@dimen/font_12"
+                    android:textAlignment="viewStart"
+                    android:singleLine="false"
+                    android:layout_marginTop="@dimen/size_5"
+                    app:customFont="@string/Nuinito_Regular" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_12">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/size_16"
+                    android:layout_height="@dimen/size_16"
+                    android:src="@drawable/ic_calendar" />
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="18-08-2021"
+                    android:textColor="@color/colorTextGrayLight"
+                    android:textSize="@dimen/font_12"
+                    android:textAlignment="viewStart"
+                    android:singleLine="false"
+                    android:layout_marginStart="@dimen/size_5"
+                    app:customFont="@string/Nuinito_Regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/size_16">
+                <ImageView
+                    android:layout_width="@dimen/size_16"
+                    android:layout_height="@dimen/size_16"
+                    android:src="@drawable/ic_clock" />
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="02:22:21 AM"
+                    android:textColor="@color/colorTextGrayLight"
+                    android:textSize="@dimen/font_12"
+                    android:textAlignment="viewStart"
+                    android:singleLine="false"
+                    android:layout_marginStart="@dimen/size_5"
+                    app:customFont="@string/Nuinito_Regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewBagNumbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/size_10"
+                android:visibility="gone">
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/tvBags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Bags: 3"
+                    android:textColor="@color/colorMainTextBlue"
+                    android:textSize="@dimen/font_12"
+                    android:textAlignment="viewStart"
+                    android:singleLine="true"
+                    android:layout_marginStart="@dimen/size_5"
+                    app:customFont="@string/Nuinito_Regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

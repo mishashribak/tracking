@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_40"
+        android:layout_marginHorizontal="@dimen/size_16">
+        <!-- Toolbar -->
+        <LinearLayout
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <include android:id="@+id/btnBack" layout="@layout/view_back_button" />
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10"
+                android:text="@string/list_task"
+                android:textColor="@color/colorMainTextBlue"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListTask"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/size_15"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:padding="@dimen/font_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/no_tasks"
+            android:visibility="gone"
+    />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/viewCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/size_40"
+            android:layout_marginHorizontal="@dimen/size_16">
+
+            <LinearLayout
+                android:id="@+id/view_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <include android:id="@+id/btnBack"
+                    layout="@layout/view_back_button" />
+            </LinearLayout>
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10"
+                android:text="@string/scan_biohazard_bag"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/verifiedNotifyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/size_15">
+
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/txtScanResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_10"
+                    android:text="@string/bar_code_verified"
+                    android:textColor="@color/colorTextGreen"
+                    android:textSize="@dimen/font_14"
+                    app:customFont="@string/Nuinito_Bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess"
+                    android:layout_width="@dimen/size_35"
+                    android:layout_height="@dimen/size_35"
+                    android:src="@drawable/ic_green_checked"
+                    android:layout_marginStart="@dimen/size_10"/>
+
+            </LinearLayout>
+
+            <com.blazma.logistics.custom.CustomMaterialButton
+                android:id="@+id/btnProceed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:text="@string/proceed"
+                android:textColor="@color/colorWhite"
+                android:background="@null"
+                android:backgroundTint="@color/colorMainTextBlue"
+                app:shapeAppearance="@style/LoginButton"
+                style="?buttonStyle"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:layout_marginBottom="@dimen/size_30"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">Logistics</string>
+    <string name="scandit_api_key">AS8ARpuBDytnQReAiwu/Ey4jPsx4D9nfU1754YcLeC85Qe99dWgHiuBLdLEqLolKenBDhklVcVAzXKoS70ocgSYr8oELWDwEwA3u04xmwCHAGsDXpHjwu9FR2/T+OH5t4TxB6BIeYXjKP2qqBMm3YTjFEfinK3PKo/HGgz2+8R100ZP6Y0nRM+/R89AWoiah8CBRzQ8MG5K5xQpztNT7b+uCXAbSUjEJ3P/KTmsBGuFHdIgexZ8HcINW3l11eOfnUju/Z1LtQF7GJrMtpXT59hfoV8sjYDxiS0/Tj+fmSdTTkL+zVr/yqBnBm9qf+eR6EvA0TEUWHLQOjrWiFS7tDOnS68CdyT0fE9XgBn9wfFJLQSNmMHAaqDtqlV1eC3PgYPig47E4mY38jTY2OzOA0d9LLcw5JOtZO8c+OZKc85fBcanJZaOnfoTE+7Jvw8ON3r6R3oP743zRhPfRyhCX6qZVxMPa/D47bJq+IWhlCTrFJsOgDVD2/bKC1du6kukN5LhAFaZxPKEJBgKcUzG4uHTdCYqFW1cVZTNzo6ktaDg7Fn9ywJrLF8xMjVqoiZyDQf37spX4RA0P7fmTC60o9A6veiIYQ2UkGebKQ5FTC+Ak+3RFgrnBv98kO84pN5p6cWEQiw3JlhRqRgCq0ZhHAtT3pLAg5A3FO5iaVqi9t993GlNb+gdT1lUo24bu4WhcAXhrgYrMatotDrbT3nbI75W56HKEUPcl81++jkSK2JVDckItmDtwWCW7bKRh2/HMiLG3+XOpFmevmDFNO/zN9eUylXpUoazLlF75nyDfCyqjaDz9OjY8zGGGPPU=</string>
+
+    <string name="Nuinito_Regular" translatable="false">fonts/Nunito-Regular.ttf</string>
+    <string name="Nuinito_Bold" translatable="false">fonts/Nunito-Bold.ttf</string>
+    <string name="Nuinito_SemiBold" translatable="false">fonts/Nunito-SemiBold.ttf</string>
+
+    <string name="pharma">Pharma</string>
+
+    // Login
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="upper_login">LOGIN</string>
+
+    // Main
+    <string name="mtc_delivery_app">DELIVERY APP</string>
+    <string name="in_transit">In Transit</string>
+    <string name="place_a">Place A</string>
+    <string name="place_b">Place B</string>
+    <string name="sign_off">Sign Off</string>
+    <string name="finished_task">FInished Tasks</string>
+    <string name="check_your_today_tasks">Check your today tasks</string>
+
+    // Tab
+    <string name="medical_task">MEDICAL TASK</string>
+    <string name="swap">SWAP</string>
+    <string name="pharma_task">PHARMA TASK</string>
+    <string name="car_task">CAR TASK</string>
+    <string name="money_task">MONEY TASK</string>
+
+    <string name="pickup_samples">PICKUP SAMPLES</string>
+    <string name="samples_placement">SAMPLES PLACEMENT</string>
+    <string name="samples_pull_out">SAMPLES PULL OUT</string>
+    <string name="drop_off_samples">DROP OFF SAMPLES</string>
+
+    // Medical Task
+    <string name="list_task">TASK LIST</string>
+    <string name="freezer_placement">FREEZER PLACEMENT</string>
+    <string name="delivery_task">DELIVERY TASK</string>
+
+    // List Task
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="distance">DISTANCE</string>
+    <string name="time_for_journey">TIME FOR JOURNEY</string>
+    <string name="rtCount">RT: %1$d</string>
+    <string name="refCount">REF: %1$d</string>
+    <string name="frzCount">FRZ: %1$d</string>
+    <string name="call">CALL</string>
+    <string name="samples">SAMPLES</string>
+    <string name="start">START</string>
+    <string name="order_number">Order Number: </string>
+    <string name="bags">Bags: %1$d</string>
+    <string name="tasks_samples">Tasks, Samples</string>
+    <string name="per_sample">PER SAMPLE</string>
+    <string name="per_box">PER BOX</string>
+    <string name="temperature">TEMPERATURE</string>
+    <string name="sample_type">SAMPLE TYPE</string>
+    <string name="task_type">TASK TYPE</string>
+    <string name="box_details">BOX DETAILS</string>
+    <string name="box_count">BOX COUNT</string>
+    <string name="sample_count">SAMPLE COUNT</string>
+    <string name="add_more_boxes">ADD MORE BOXES</string>
+    <string name="save_box">SAVE BOX</string>
+    <string name="scanned_bar_codes">SCANNED BARCODES</string>
+    <string name="scanned_bag_codes">SCANNED BAGS</string>
+    <string name="no_sample">NO SAMPLES</string>
+    <string name="submit">SUBMIT</string>
+    <string name="scan_location_barcode">SCAN LOCATION BARCODE</string>
+    <string name="scan_takasi_barcode">SCAN TAKASI BARCODE</string>
+    <string name="scan_bag_barcode">SCAN BAG</string>
+    <string name="scan_biohazard_bag">SCAN BIOHAZARD BAG(MTC)</string>
+    <string name="proceed">PROCEED</string>
+    <string name="bar_code_verified">BARCODE VERIFIED</string>
+    <string name="invalid_sample_bar_code">INVALID SAMPLE BAR CODE</string>
+    <string name="invalid_location_bar_code">INVALID LOCATION BAR CODE</string>
+    <string name="invalid_bag_bar_code">INVALID BAG BAR CODE</string>
+    <string name="invalid_container_bar_code">INVALID CONTAINER BAR CODE</string>
+    <string name="rescan">RESCAN</string>
+    <string name="task_details">TASK DETAILS</string>
+    <string name="save">SAVE</string>
+    <string name="driver_signature">DRIVER SIGNATURE</string>
+    <string name="submit_task">SUBMIT TASK</string>
+    <string name="sign_below">Sign below</string>
+    <string name="type_confirmation_code">Type Confirmation Code</string>
+    <string name="send_barcodes">SEND BARCODES</string>
+    <string name="finish">FINISH</string>
+    <string name="msg_please_sign">Please sign to submit</string>
+    <string name="msg_please_enter_confirmation_code">Please enter confirmation code</string>
+    <string name="msg_sure_no_sample">Are you sure you don’t have samples?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="sample_added_successfully">Samples are sent successfully</string>
+    <string name="msg_enable_file_access">Please enable the access to file system to accept your signature</string>
+    <string name="msg_failed_save_sign_image">Sorry, failed to accept the signature in your system</string>
+    <string name="msg_make_signature">Please upload signature</string>
+    <string name="msg_failed_remove_image">Failed to remove local image</string>
+    <string name="add_more_samples">ADD MORE SAMPLES</string>
+    <string name="save_samples">SAVE SAMPLES</string>
+    <string name="finish_collecting">FINISH COLLECTING</string>
+    <string name="number_of_tasks">Number of tasks: %1$d</string>
+    <string name="number_of_bags">Number of bags: %1$d</string>
+
+    // Temperature
+    <string name="temp_room">ROOM TEMPERATURE (+15C TO +25C)</string>
+    <string name="temp_refrigerate">REFRIGERATE (+2C TO +8C)</string>
+    <string name="temp_frozen">FROZEN(0C TO -18C)</string>
+    <string-array name="container_list">
+        <item>@string/temp_room</item>
+        <item>@string/temp_refrigerate</item>
+        <item>@string/temp_frozen</item>
+    </string-array>
+    <string name="msg_select_temperature">Please select temperature</string>
+
+    // Freezer Placement
+    <string name="select_container">SELECT CONTAINER</string>
+    <string name="scan_container">SCAN CONTAINER</string>
+    <string name="scan_freezer">SCAN FREEZER</string>
+    <string name="scan_bag">SCAN BAG</string>
+    <string name="scan_barcode">SCAN BARCODE</string>
+    <string name="scan_samples">SCAN SAMPLES</string>
+    <string name="select_samples">SELECT SAMPLES</string>
+    <string name="total_barcodes">TOTAL: %1$d</string>
+    <string name="remaining_bags">REMAINING BAGS</string>
+    <string name="complete">COMPLETE</string>
+    <string name="added_successfully">ADDED SUCCESSFULLY</string>
+    <string name="task_status">TASK STATUS</string>
+    <string name="samples_added_to_container">SAMPLES ARE ADDED TO CONTAINER SUCCESSFULLY!</string>
+    <string name="done">DONE</string>
+    <string name="submit_samples">SUBMIT SAMPLES</string>
+    <string name="close_freezers">CLOSE FREEZERS</string>
+    <string name="scan_container_barcode">SCAN CONTAINER BARCODE</string>
+    <string name="msg_no_samples_can_be_added">There is no samples that can be added</string>
+    <string name="msg_scan_container_barcode">Please scan your container barcode</string>
+    <string name="msg_scan_bag_code">Please scan bag bar code</string>
+    <string name="msg_sure_remove_samples">Are you sure you want to remove samples?</string>
+    <string name="msg_sure_deliver">Are you sure you want to deliver?</string>
+    <string name="msg_sure_submit_samples">Are you sure you want to submit samples?</string>
+    <string name="msg_sure_close_freezers">Are you sure you want to close freezers?</string>
+    <string name="msg_scan_correct_container">Scanned Container is not correct</string>
+    <string name="remove_samples">REMOVE SAMPLES</string>
+    <string name="add_bag">ADD BAG</string>
+    <string name="add_new_bag">ADD NEW BAG</string>
+    <string name="scan_new_freezer">SCAN NEW FREEZER</string>
+    <string name="save_bag">SAVE BAG</string>
+    <string name="select_another_bag">SELECT ANOTHER BAG</string>
+
+    // Delivery Task
+    <string name="deliver">DELIVER</string>
+    <string name="remove_bag">REMOVE BAG</string>
+    <string name="remove_successfully">REMOVE SUCCESSFULLY</string>
+    <string name="task_completed_successfully">TASK COMPLETED SUCCESSFULLY</string>
+
+    // Menu
+    <string name="menu_title">MTC DELIVERY APP</string>
+    <string name="terms_condition">TERMS AND CONDITION</string>
+    <string name="policy">POLICY</string>
+    <string name="share_app">SHARE APP</string>
+    <string name="setting">SETTING</string>
+    <string name="notification">NOTIFICATION</string>
+    <string name="profile">PROFILE</string>
+    <string name="logout">LOGOUT</string>
+    <string name="schedule">SCHEDULE</string>
+
+    // Profile
+    <string name="name">Name</string>
+    <string name="city">City</string>
+    <string name="email_id">Email ID</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="car_details">Car Details</string>
+    <string name="driver_id">Driver ID : </string>
+    <string name="model">Model : </string>
+    <string name="color">Color : </string>
+    <string name="car_number">Car Number : </string>
+    <string name="description">Description</string>
+    <string name="release_car">RELEASE CAR</string>
+    <string name="receive_car">RECEIVE CAR</string>
+
+    // Notification
+    <string name="new_task">New task</string>
+    <string name="samples_in_freezer">Samples in Freezer</string>
+    <string name="task_completed">Task Completed</string>
+    <string name="sample_collected">Sample Collected</string>
+
+    <!-- Login page -->
+    <string name="incorrect_login_info">Incorrect login information. Please try to enter again.</string>
+
+    <!-- Map -->
+    <string name="current_location">Current location</string>
+    <string name="permission_dialog_title">Location Permission Needed</string>
+    <string name="permission_dialog_content">This app needs the location permission, please accept to use the location functionality</string>
+    <string name="ok">OK</string>
+    <string name="from_location">From Location</string>
+    <string name="google_maps_install_tint">Please install the Google Maps application.</string>
+    <string name="google_maps_error">Sorry, failed to open the Google Maps in your device. Please try again later.</string>
+
+    <string name="accept">ACCEPT</string>
+    <string name="arabic">ARABIC</string>
+    <string name="english">ENGLISH</string>
+
+<!--    Schedule-->
+    <string name="location">LOCATION</string>
+    <string name="complex">Complex</string>
+
+    <string name="car_images">CAR IMAGES</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="are_u_sure_receive_car">Are you sure you receive car?</string>
+    <string name="upload_car_images">Please upload 6 images</string>
+    <string name="add_sign">Please add you signature</string>
+
+
+    <!-- Swap -->
+    <string name="task_swapped_successfully">TASK IS SWAPPED SUCCESSFULLY</string>
+    <string name="reject">REJECT</string>
+    <string name="bag_count">BAG COUNT</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="barcode_not_matched">The barcode you scanned is not matched</string>
+
+    <string name="msg_dialog_swap">Are you sure you want to swap task?</string>
+
+    <!-- Map -->
+    <string name="please_share_otp">PLEASE SHARE OTP :</string>
+
+    <!-- Terms -->
+    <string name="msg_failed_getting_login_info">Sorry, failed to read the user information, try to login again</string>
+    <string name="mobile">Phone number</string>
+
+    <!-- Money Transfer -->
+    <string name="pickup_money">PICKUP MONEY</string>
+    <string name="verify_from_location">VERIFY FROM LOCATION</string>
+    <string name="verify_to_location">VERIFY TO LOCATION</string>
+    <string name="verify_complete">VERIFICATION COMPLETED</string>
+    <string name="status">STATUS :</string>
+    <string name="amount">AMOUNT :</string>
+    <string name="otp">OTP</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+    <string name="verify">VERIFY</string>
+    <string name="accepted">Accepted</string>
+    <string name="reach_the_location">Location\nReached</string>
+    <string name="from_location_format">From : %s</string>
+    <string name="to_location_format">To : %s</string>
+    <string name="visit_hour_format">Visit Hour : %s</string>
+    <string name="accept_all">Accept All</string>
+    <string name="accept_tasks">Please click accept all</string>
+    <string name="waiting_time_format">Waiting time : %s</string>
+</resources>

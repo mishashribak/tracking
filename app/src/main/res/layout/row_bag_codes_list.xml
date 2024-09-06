@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_bar_code"
+                android:layout_width="@dimen/size_25"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_bar_code"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/size_5"/>
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:id="@+id/txtBag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="79009"
+                android:textColor="@color/colorTextGrayDark"
+                android:textSize="@dimen/font_14"
+                android:textAlignment="viewStart"
+                app:layout_constraintStart_toEndOf="@+id/image_bar_code"
+                app:layout_constraintEnd_toStartOf="@+id/txtValue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/size_10"/>
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:id="@+id/txtValue"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                tools:text="REFRIGERATE"
+                android:textColor="@color/colorTextGrayDark"
+                android:textSize="@dimen/font_14"
+                android:gravity="center"
+                app:layout_constraintStart_toEndOf="@+id/txtCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/size_10"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bottom_rounded_gray_view"
+            android:layout_marginVertical="@dimen/size_15"
+            />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/size_25"
+        android:paddingVertical="@dimen/size_15"
+        android:layout_marginBottom="@dimen/size_10"
+        android:background="@drawable/round_white_bg">
+        <com.blazma.logistics.custom.CustomTextView
+            android:id="@+id/tvClientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:singleLine="false"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16"
+            app:customFont="@string/Nuinito_Bold"
+            tools:text="Number of tasks: 3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/txtNumberOfTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:singleLine="false"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorMainTextBlue"
+                    android:textSize="@dimen/font_13"
+                    app:customFont="@string/Nuinito_Bold"
+                    tools:text="AI Arid Medical Complex" />
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/txtNumberOfBag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:singleLine="false"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorMainTextBlue"
+                    android:textSize="@dimen/font_13"
+                    app:customFont="@string/Nuinito_Bold"
+                    tools:text="Number of bags: 3" />
+                <com.blazma.logistics.custom.CustomTextView
+                    android:id="@+id/tv_waiting_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:singleLine="false"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorMainTextBlue"
+                    android:textSize="@dimen/font_13"
+                    app:customFont="@string/Nuinito_Bold"
+                    tools:text="Waiting Time : 30 mins" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_5"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map_pin_2_line"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <com.blazma.logistics.custom.CustomMaterialButton
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_48"
+            android:text="@string/accept"
+            android:textColor="@color/colorWhite"
+            android:background="@null"
+            android:backgroundTint="@color/colorMainTextBlue"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/size_5"
+            android:paddingHorizontal="@dimen/size_5"
+            app:shapeAppearance="@style/LoginButton"
+            style="?buttonStyle"
+            android:visibility="gone"
+            />
+
+        <com.blazma.logistics.custom.CustomTextView
+            android:id="@+id/tvAccepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreenDark"
+            android:text="@string/accepted"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/size_10"
+            app:customFont="@string/Nuinito_SemiBold"
+            android:textSize="@dimen/font_16"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login_img">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_40">
+
+            <include android:id="@+id/btnBack"
+                layout="@layout/view_back_button" />
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10"
+                android:text="@string/policy"
+                android:textColor="@color/colorMainTextBlue"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size_20">
+            <com.blazma.logistics.custom.CustomTextView
+                android:id="@+id/tvPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_white_bg"
+                android:textColor="@color/colorTextGrayDark"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Regular"
+                android:text = "Privacy and Policy"
+                android:padding="@dimen/size_16"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

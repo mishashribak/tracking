@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/size_40"
+        android:paddingHorizontal="@dimen/size_16"
+        android:background="@drawable/bg_login_img">
+        <LinearLayout
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <include android:id="@+id/btnBack" layout="@layout/view_back_button" />
+            <com.blazma.logistics.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10"
+                android:text="@string/car_images"
+                android:textColor="@color/colorMainTextBlue"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Bold" />
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/view_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/size_40">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_gravity="end"
+                   android:layout_marginBottom="@dimen/size_20"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <com.blazma.logistics.custom.CustomTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:singleLine="true"
+                       android:text="@string/car_number"
+                       android:textAlignment="viewStart"
+                       android:textColor="@color/colorTextGrayDark"
+                       android:textSize="@dimen/font_16"
+                       app:customFont="@string/Nuinito_Bold"/>
+                   <com.blazma.logistics.custom.CustomTextView
+                       android:id="@+id/txtCarNumber"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/size_5"
+                       android:singleLine="true"
+                       android:text=""
+                       android:textAlignment="viewStart"
+                       android:textColor="@color/colorTextGrayDark"
+                       android:textSize="@dimen/font_16"
+                       app:customFont="@string/Nuinito_Regular"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:background="@drawable/round_white_bg"
+                   android:padding="@dimen/size_20"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:gravity="center_vertical">
+                       <ImageView
+                           android:id="@+id/ivLogout"
+                           android:layout_width="@dimen/size_30"
+                           android:layout_height="@dimen/size_30"
+                           android:padding="5dp"
+                           android:src="@drawable/ic_plus"/>
+
+                       <com.blazma.logistics.custom.CustomTextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="@dimen/size_10"
+                           android:text="@string/add_photos"
+                           android:textColor="@color/colorTextGrayDark"
+                           android:textSize="@dimen/font_14"
+                           app:customFont="@string/Nuinito_Bold" />
+                   </LinearLayout>
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/rvImages"
+                       android:layout_marginTop="@dimen/size_20"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                       tools:listitem="@layout/row_add_car"
+                       app:spanCount="3"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/viewSign"
+                   android:layout_width="match_parent"
+                   android:layout_height="230dp"
+                   android:orientation="vertical"
+                   android:layout_marginTop="@dimen/size_25"
+                   android:gravity="center_horizontal"
+                   android:background="@drawable/rounded_white_bg"
+                   android:padding="@dimen/size_16">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <com.blazma.logistics.custom.CustomTextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerInParent="true"
+                           android:layout_marginStart="@dimen/size_10"
+                           android:text="@string/sign_below"
+                           android:textColor="@color/colorTextGrayDark"
+                           android:textSize="@dimen/font_13"
+                           app:customFont="@string/Nuinito_Regular" />
+
+                       <ImageView
+                           android:id="@+id/btnDelete"
+                           android:layout_width="20dp"
+                           android:layout_height="30dp"
+                           android:layout_alignParentEnd="true"
+                           android:padding="@dimen/size_5"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/ic_delete" />
+                   </RelativeLayout>
+                   <com.kyanogen.signatureview.SignatureView
+                       xmlns:sign="http://schemas.android.com/apk/res-auto"
+                       android:id="@+id/signature_view"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       sign:penSize="5dp"
+                       sign:backgroundColor="@color/colorWhite"
+                       sign:penColor="#000000"
+                       sign:enableSignature="true"
+                       android:layout_marginTop="@dimen/size_10"/>
+               </LinearLayout>
+
+               <com.blazma.logistics.custom.CustomMaterialButton
+                   android:id="@+id/btnSubmit"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/size_48"
+                   android:layout_marginTop="@dimen/size_20"
+                   android:text="@string/submit"
+                   android:textColor="@color/colorWhite"
+                   android:background="@null"
+                   android:backgroundTint="@color/colorMainTextBlue"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:shapeAppearance="@style/LoginButton"
+                   android:layout_marginBottom="@dimen/size_30"
+                   style="?buttonStyle"
+                   />
+
+           </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

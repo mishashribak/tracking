@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.blazma.logistics.custom.CustomTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtTemperature"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/size_15"
+    android:paddingHorizontal="@dimen/size_15"
+    android:textAlignment="viewStart"
+    android:textColor="@color/colorTextGrayDark"
+    android:textSize="@dimen/font_14"
+    />

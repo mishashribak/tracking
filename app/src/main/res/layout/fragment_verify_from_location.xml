@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_40"
+        android:layout_marginHorizontal="@dimen/size_16"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <include android:id="@+id/btnBack" layout="@layout/view_back_button" />
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10"
+                android:text="@string/verify_from_location"
+                android:textColor="@color/colorMainTextBlue"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.blazma.logistics.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/size_16"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Bold" />
+
+            <com.blazma.logistics.custom.CustomEditText
+                android:id="@+id/etOtp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_10"
+                android:paddingHorizontal="@dimen/size_25"
+                android:textSize="@dimen/font_13"
+                android:textColor="@color/colorTextGrayDark"
+                android:textColorHint="@color/colorTextGrayLight"
+                android:textAlignment="viewStart"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:hint="@string/please_enter_otp"
+                android:text=""
+                android:background="@drawable/rounded_shadow_bg"/>
+
+            <com.blazma.logistics.custom.CustomMaterialButton
+                android:id="@+id/btnVerify"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_65"
+                android:text="@string/verify"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:backgroundTint="@color/colorMainTextBlue"
+                app:shapeAppearance="@style/LoginButton"
+                style="?buttonStyle"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

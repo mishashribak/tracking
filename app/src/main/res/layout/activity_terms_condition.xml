@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login_img">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_40">
+
+            <include android:id="@+id/btnBack"
+                layout="@layout/view_back_button" />
+
+            <com.blazma.logistics.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10"
+                android:text="@string/terms_condition"
+                android:textColor="@color/colorMainTextBlue"
+                android:textSize="@dimen/font_14"
+                app:customFont="@string/Nuinito_Bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size_20">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <com.blazma.logistics.custom.CustomMaterialButton
+                   android:id="@+id/btnArabic"
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="@dimen/size_48"
+                   android:text="@string/arabic"
+                   android:textColor="@color/colorWhite"
+                   android:background="@null"
+                   android:backgroundTint="@color/colorMainTextBlue"
+                   app:shapeAppearance="@style/LoginButton"
+                   style="?buttonStyle"
+                   />
+               <com.blazma.logistics.custom.CustomMaterialButton
+                   android:id="@+id/btnEnglish"
+                   android:layout_marginStart="@dimen/size_20"
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="@dimen/size_48"
+                   android:text="@string/english"
+                   android:textColor="@color/colorWhite"
+                   android:background="@null"
+                   android:backgroundTint="@color/colorMainTextBlue"
+                   app:shapeAppearance="@style/LoginButton"
+                   style="?buttonStyle"
+                   />
+           </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/viewSign"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/size_25"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rounded_white_bg"
+                android:padding="@dimen/size_16">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.blazma.logistics.custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/size_10"
+                        android:text="@string/sign_below"
+                        android:textColor="@color/colorTextGrayDark"
+                        android:textSize="@dimen/font_13"
+                        app:customFont="@string/Nuinito_Regular" />
+
+                    <ImageView
+                        android:id="@+id/btnDelete"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/size_5"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_delete" />
+                </RelativeLayout>
+                <com.kyanogen.signatureview.SignatureView
+                    xmlns:sign="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/signature_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    sign:penSize="5dp"
+                    sign:backgroundColor="@color/colorWhite"
+                    sign:penColor="#000000"
+                    sign:enableSignature="true"
+                    android:layout_marginTop="@dimen/size_10"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+                <com.blazma.logistics.custom.CustomMaterialButton
+                    android:id="@+id/btnAccept"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:text="@string/accept"
+                    android:textColor="@color/colorWhite"
+                    android:background="@null"
+                    android:backgroundTint="@color/colorPink"
+                    app:shapeAppearance="@style/LoginButton"
+                    style="?buttonStyle"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
